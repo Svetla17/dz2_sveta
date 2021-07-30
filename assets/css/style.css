@@ -39,8 +39,9 @@ html {
   display: flex;
   list-style: none;
 }
+
 .nav-item {
-  margin: 52px 40px;
+  margin: 5.2rem 4.0rem;
 }
 
 .nav-link {
@@ -51,6 +52,7 @@ html {
     color: #081F32;
     text-decoration: none;
 }
+
 .nav-link-blue{
     font-family: 'Gelasio', sans-serif;
     font-style: normal;
@@ -60,7 +62,7 @@ html {
     text-decoration: none;
 }
 
-.request {
+.request_book {
     font-family: 'Gelasio', sans-serif;
     text-decoration: none;
     display: inline-block;
@@ -69,7 +71,7 @@ html {
     margin-top: 35px;
     height: 54px;
     color: #FFFFFF;
-    padding: 10px 20px;    
+    padding: 1rem 2rem;    
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem;       
@@ -77,11 +79,13 @@ html {
   
 
 /* FIRST SECTION */
+
 .first-section {
     background-image: url("../imgs/main-bg.jpg");
     min-height: 690px;
     padding: 22rem 0 0;
 }
+
 .text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -89,29 +93,122 @@ html {
     font-size: 2rem;
     color: #1B75BB;    
     text-transform: uppercase;
-    margin-bottom: 15px;
+    letter-spacing: 0.1em;  
+    opacity: 0.8;
+    margin-bottom: 1.5rem;      
 }
-.first-section-title {
-    font-family: 'Gelasio', sans-serif
-    font-size: 5.7rem;
-    max-width: 45rem;
-    margin: 0 0 2rem;
-    font-weight: 600;
-    font-size: 57px;
-    color: #081F32;
 
+.first-section-title {
+    font-family: 'Gelasio', sans-serif;
+    font-size: 5.7rem;
+    max-width: 46rem;
+    margin: 0 0 2rem;
+    font-weight: 600;    
+    color: #081F32;
+}
+
+.blue {
+    font-family: 'Gelasio', sans-serif;
+    font-size: 5.7rem;   
+    font-weight: 600;    
+    color: #1B75BB;   
 }
 
 .first-section-text {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
-    max-width: 34rem;
+    line-height: 160%;
+    max-width: 35rem;  
+    color: #081F32;
+    opacity: 0.6;
+}
+    
+.request_read {
+    font-family: 'Gelasio', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    background: #1B75BB;
+    border-radius: 0.5rem;
+    margin-top: 3.5rem;
+    height: 5.4rem;
+    color: #FFFFFF;
+    padding: 1.5rem 3.0rem;    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;      
+}
+
+.mini_box{          
+    min-height: 10rem;
+    width: 68.7rem;
+    margin-left: 24.4rem;
+    background: rgba(255, 255, 255, 0.21); 
+    backdrop-filter: blur(0.2rem);       
+    border-radius: 1rem;  
+    position: absolute;
+    margin-top: -5rem;
+    margin-bottom: -5rem;   
+    list-style: none;  
+    text-decoration: none;                  
+    }
+
+.ch_date {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    height: 10rem;
+    padding: 4rem;  
+}
+
+.cheek{
+    list-style: none;
+    text-decoration: none; 
+     
+}    
+
+.row{
+    max-height: 10rem;
+    width: 17rem; 
+}
+    
+h3 {        
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;      
+    color: #081F32;
+    margin: 0 0 1.5rem;       
+}
+
+.date{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;   
+    color: #081F32;
+    opacity: 0.8;       
+}
+
+.request_find {    
+    font-family: 'Gelasio', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    background: #1B75BB;
+    border-radius: 0.5rem;    
+    height: 5.4rem;
+    color: #FFFFFF;
+    padding: 1.5rem 3.0rem;    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
 }
 
 @media screen and (max-width: 767px) {
 
     .first-section-title {
         font-size: 4.7rem;
-    }
+    
 
 }
 
