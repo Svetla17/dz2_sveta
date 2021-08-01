@@ -75,10 +75,16 @@ html {
     padding: 1.5rem 3rem;    
     font-style: normal;
     font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 150%;       
+    font-size: 1.6rem;        
   }
-  
+  @media screen and (max-width 1024px) {
+
+    .header-row{
+        flex-direction: column;
+    }   
+    
+    
+    }
 
 /* FIRST SECTION */
 
@@ -140,10 +146,13 @@ html {
     font-size: 1.6rem;      
 }
 
+
+/*Mini-box*/
+
 .mini_box{          
     min-height: 10rem;
-    width: 68.7rem;
-    margin-left: 24.4rem;
+    width: 71rem;
+    margin-left: 15rem;
     background: rgba(255, 255, 255, 0.21); 
     backdrop-filter: blur(0.7rem);       
     border-radius: 1rem;  
@@ -156,22 +165,40 @@ html {
 
 .ch_date {
     display: flex;
-    list-style: none;
-    text-decoration: none;
+    list-style: none;   
     align-items: center;
     height: 10rem;
-    padding: 4rem;  
+    padding: 3.5rem;  
 }
+.row{
+    max-height: 10rem;
+    width: 17rem; 
+    position: relative;
+    padding: 1rem 3rem  ;  
+    
+}
+
+.row::before{
+    content: '' ;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    width: 2px;
+    height: 34px;
+    background-color: #9DACB8 
+
+}
+
+.row:first-child::before{
+    display: none;
+}
+
 
 .cheek{
     list-style: none;
     text-decoration: none; 
 }    
 
-.row{
-    max-height: 10rem;
-    width: 17rem; 
-}
     
 h6 {        
     font-family: 'Roboto', sans-serif;
@@ -191,18 +218,21 @@ h6 {
     opacity: 0.8;       
 }
 
-.request_find {    
+.request_find {   
+    width: 14rem; 
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    list-style: none;
     display: inline-block;
     background: #1B75BB;
     border-radius: 0.5rem;    
-    height: 5.4rem;
+    height: 5.4rem;    
     color: #FFFFFF;
-    padding: 1.5rem 3.0rem;    
+    padding: 1.5rem 3rem;    
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem;
+    
 }
 
 
@@ -211,7 +241,7 @@ h6 {
 .holidays {     
 }
 
-.holidays-row {
+.holidays-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,18 +299,13 @@ h6 {
     margin: 2rem auto;
 }
 
-@media screen and (max-width: 767px) {
 
-    .first-section-title {
-        font-size: 4.7rem;
-    
 
-}
+@media screen and (max-width 1024px) {
 
-@media screen and (max-width: 425px) {
+.holidays-row{
+    flex-direction: column;
+}   
 
-    .first-section-title {
-        font-size: 2.7rem;
-    }
 
 }
